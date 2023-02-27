@@ -1,0 +1,22 @@
+body {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  /* grid-template-columns: repeat(8, auto); */
+  border: solid black 2px;
+  margin-bottom: 24px;
+}
+
+/* .empty {
+  border: solid black 1px;
+} */
