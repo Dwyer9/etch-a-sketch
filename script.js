@@ -32,7 +32,8 @@ const createSquares = function (num) {
 createSquares(32);
 
 resetBtn.addEventListener('click', () => {
-  let number = input.value;
+  let number;
+  if (input.value < 1) number = 32;
   if (number > 100) number = 100;
   console.log(number);
   container.innerHTML = '';
