@@ -25,6 +25,7 @@ const createSquares = function (num) {
       //Add only draw on Mouse Down
       // if (mouseDown) box.style.backgroundColor = 'black';
       box.style.backgroundColor = 'black';
+      console.log(typeof input.value);
     });
   });
 };
@@ -32,7 +33,7 @@ const createSquares = function (num) {
 createSquares(32);
 
 resetBtn.addEventListener('click', () => {
-  let number;
+  let number = input.value;
   if (input.value < 1) number = 32;
   if (number > 100) number = 100;
   console.log(number);
